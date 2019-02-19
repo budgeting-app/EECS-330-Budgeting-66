@@ -54,18 +54,18 @@
 
 <div class="w3-content w3-container w3-padding-64" id="about">
   <form name="login-form" onsubmit="return validateForm()" method="post">
-    <div class="form-group row has-error" id="username-div">
+    <div class="form-group row" id="username-div">
       <div class="col-md-4 col-md-offset-4">
           <label for="exampleInputEmail1" class="control-label">Username</label>
           <input type="text" class="form-control" id="login-username">
-          <span class="help-block">Username was left blank</span>
+          <span class="help-block" id="username-help">Username was left blank</span>
       </div>
     </div>
-    <div class="form-group row has-error" id="pass-div">
+    <div class="form-group row" id="pass-div">
       <div class="col-md-4 col-md-offset-4">
           <label for="exampleInputPassword1" class="control-label">Password</label>
-          <input type="password" class="form-control" id="exampleInputPassword1">
-          <span class="help-block">Password was left blank</span>
+          <input type="password" class="form-control" id="login-pass">
+          <span class="help-block" id="password-help">Password was left blank</span>
       </div>
     </div>
     <div class="col-md-12 text-center">
