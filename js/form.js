@@ -19,4 +19,7 @@ function validateForm() {
       }
       return false;
     }
+    document.getElementById("login-button").onclick = function() {
+      window.location("page3.html")
+    }
   }

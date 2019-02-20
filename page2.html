@@ -53,7 +53,7 @@
 <!-- Container (About Section) -->
 
 <div class="w3-content w3-container w3-padding-64" id="about">
-  <form name="login-form" onsubmit="return validateForm()" method="post">
+  <form name="login-form" action="page3.html" onsubmit="return validateForm()" method="post">
     <div class="form-group row" id="username-div">
       <div class="col-md-4 col-md-offset-4">
           <label for="exampleInputEmail1" class="control-label">Username</label>
@@ -69,7 +69,7 @@
       </div>
     </div>
     <div class="col-md-12 text-center">
-      <button type="submit" class="btn btn-primary btn-raised">Login</button>
+      <button id="login-button" type="submit" class="btn btn-primary btn-raised">Login</button>
     </div>
   </form>
 </div>

@@ -1,0 +1,3 @@
+window.AjaxRCRefreshText='Auto-Refresh';window.AjaxRCRefreshHoverText='Automatically refresh the page';window.ajaxPages=["Special:RecentChanges","Special:WikiActivity","Special:UncategorizedPages","Special:AllPages","Special:Contributions"];var enableMathJax=(wgCanonicalNamespace!=="Special")&&(wgCanonicalNamespace!=="MediaWiki");enableMathJax=enableMathJax||(wgCanonicalSpecialPageName==="Undelete")&&(wgCanonicalSpecialPageName==="WikiActivity");addOnloadHook(function(){if(enableMathJax){importScriptURI("https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML,Safe");}});;;mw.loader.state({"site":"ready"});
+
+/* cache key: jokebattles:resourceloader:filter:minify-js:7:ca9634915b2faa3e677d2b369a8852ba */
