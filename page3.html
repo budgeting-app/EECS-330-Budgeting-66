@@ -71,8 +71,14 @@
     <div id="pie-chart-div" class="column-ex">
       <div>
         <canvas id="pieChart"></canvas>
-        <h4>Expenses until now in dollars</h4>
+        <h4>Expenses this month in dollars</h4>
       </div>
+    </div>
+</div>
+<div id="line-chart-container">
+    <div id="line-chart-div">
+        <canvas id="lineChart"></canvas>
+        <h4>Expenses this year</h4>
     </div>
 </div>
 <!--               ###############                 -->
@@ -92,9 +98,35 @@
       options: {
         responsive: true
       }
+    }); 
+</script>
+<script>
+    //line
+    var ctxL = document.getElementById("lineChart").getContext('2d');
+    var myLineChart = new Chart(ctxL, {
+      type: 'line',
+      data: {
+        labels: ["January", "February", "March", "April", "May", "June", "July"],
+        datasets: [{
+            label: "Expenses in Dollars",
+            data: [500, 415, 450, 425, 410, 400, 380],
+            backgroundColor: [
+            'rgba(0, 137, 132, .2)',
+            ],
+            borderColor: [
+            'rgba(0, 10, 130, .7)',
+            ],
+            borderWidth: 5
+          }
+        ]
+      },
+      options: {
+        responsive: true
+      }
     });
   
-</script>
+  </script>
+  
 <footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
   <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
   <div class="w3-xlarge w3-section">

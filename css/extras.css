@@ -48,6 +48,16 @@ body, html {
   height: 460px;
   text-align: center;
 }
+
+#line-chart-container {
+  text-align: center;
+  margin: auto;
+}
+
+#line-chart-div {
+  width:80%;
+  margin: auto;
+}
 .ex-row {
   display: flex;
   flex-direction: row;
@@ -65,6 +75,8 @@ body, html {
   float: left;
   background-color: rgb(128, 234, 248);
   padding: 70px;
+  padding-top: 160px;
+  padding-left: 120px;
   height: 460px;
   width: 40%; /* Full width */
 }
