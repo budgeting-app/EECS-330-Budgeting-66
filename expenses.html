@@ -1,0 +1,109 @@
+<!doctype html> 
+<html> 
+<title>budgetmates</title>
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/w3.css">
+        <link rel="stylesheet" href="css/extras.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.7.1/css/mdb.min.css" />
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.7.1/js/mdb.min.js"></script>
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.js" ></script>
+        <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+        <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
+        <script src="js/easy-pie-chart.js"></script>
+    <link rel="stylesheet" href="expenses.css" type="text/css">
+</head>
+ <!-- navigation bar --> 
+<nav>       
+    <div class="navigation-bar">
+        <a class="navigation-bar-logo-text" href="homepage.html">budgetmates</a>
+        <a href="page2.html" class="navigation-bar-button">SIGN UP</a>
+        <a href="page2.html" class="navigation-bar-button">LOG IN</a>
+    </div>
+</nav>
+<body>
+    <!--progress and daily streak -->
+<div class="ex-row">
+        <div class="container-progress column-ex">
+          <span>Progress to level 6</span>
+            <div class="progress" style="height: 20px; width: 80%;">
+                <div class="progress-bar bg-warning" role="progressbar" style="width: 75%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+            <!--
+            div class="old-level">
+              <div class="skills level">90%</div>
+            </div>
+            -->
+            <button type="button" class="btn btn-primary">Daily Streak  <span class="badge badge-pill orange">5</span></button>
+        </div>
+        <div id="pie-chart-div" class="column-ex">
+          <div>
+            <canvas id="pieChart"></canvas>
+            <h4>Expenses this month in dollars</h4>
+          </div>
+        </div>
+    </div>
+    <div id="line-chart-container">
+        <div id="line-chart-div">
+            <canvas id="lineChart"></canvas>
+            <h4>Expenses this year</h4>
+        </div>
+    </div>
+    <!--               ###############                 -->
+    <script>
+        //pie
+        var ctxP = document.getElementById("pieChart").getContext('2d');
+        var myPieChart = new Chart(ctxP, {
+          type: 'pie',
+          data: {
+            labels: ["Food-takeout", "Groceries", "Online Shopping", "Others"],
+            datasets: [{
+              data: [200, 50, 100, 40],
+              backgroundColor: ["#F7464A", "#46BFBD", "#FDB45C", "#949FB1"],
+              hoverBackgroundColor: ["#FF5A5E", "#5AD3D1", "#FFC870", "#A8B3C5"]
+            }]
+          },
+          options: {
+            responsive: true
+          }
+        }); 
+    </script>
+    <script>
+        //line
+        var ctxL = document.getElementById("lineChart").getContext('2d');
+        var myLineChart = new Chart(ctxL, {
+          type: 'line',
+          data: {
+            labels: ["January", "February", "March", "April", "May", "June", "July"],
+            datasets: [{
+                label: "Expenses in Dollars",
+                data: [500, 415, 450, 425, 410, 400, 380],
+                backgroundColor: [
+                'rgba(0, 137, 132, .2)',
+                ],
+                borderColor: [
+                'rgba(0, 10, 130, .7)',
+                ],
+                borderWidth: 5
+              }
+            ]
+          },
+          options: {
+            responsive: true
+          }
+        });
+      
+      </script>
+    <script>
+</body>
