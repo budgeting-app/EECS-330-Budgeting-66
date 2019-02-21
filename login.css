@@ -1,5 +1,4 @@
-/*** NAVIGATION BAR ***/
-
+@import url('https://fonts.googleapis.com/css?family=Karla');
 .parallax {
     /* The image used */
     background-image: url("images/expenses1.jpg");
@@ -12,8 +11,8 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    font-family: "Lato", sans-serif;
-  }
+    font-family: karla;
+}
 
 .login-label {
     text-align: center;
@@ -24,6 +23,57 @@
     width: 10%;
     margin: 0 auto;
 }
+
+.login-container {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 980px;
+    max-width: 1140px;
+    padding-top:64px!important;
+    padding-bottom:64px!important;
+}
+
+#username-help {
+    visibility: hidden;
+  }
+  
+  .form-group {
+    line-height: 0.4;
+  }
+  
+  #password-help {
+    visibility: hidden;
+  }
+  
+  #pie-chart-div {
+    width: 40%;
+    height: 460px;
+    text-align: center;
+  }
+  
+  #line-chart-container {
+    text-align: center;
+    margin: auto;
+  }
+  
+  #line-chart-div {
+    width:80%;
+    margin: auto;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .navigation-bar { 
     position: relative;
@@ -72,4 +122,5 @@
 
 .navigation-bar-button:hover { 
     background-color: #93f9b9;
+    text-decoration: none;
 }
