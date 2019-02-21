@@ -14,7 +14,6 @@
     font-family: karla;
     color: black;
     font-size: 150%;
-    font-weight: bold;
     text-decoration: none;
     line-height: 105%;
     position: relative;
@@ -44,7 +43,3 @@
 .navigation-bar-button:hover { 
     background-color: #93f9b9;
 }
-
-/* * { 
-    margin: 10px 10px 10px 10px;
-} */
