@@ -1,5 +1,30 @@
 /*** NAVIGATION BAR ***/
 
+.parallax {
+    /* The image used */
+    background-image: url("images/expenses1.jpg");
+  
+    /* Set a specific height */
+    min-height: 400px; 
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: "Lato", sans-serif;
+  }
+
+.login-label {
+    text-align: center;
+}
+
+.login-label div {
+    padding-top: 100px;
+    width: 10%;
+    margin: 0 auto;
+}
+
 .navigation-bar { 
     position: relative;
     display: block;
