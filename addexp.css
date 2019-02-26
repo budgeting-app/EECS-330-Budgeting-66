@@ -1,6 +1,11 @@
 #date-help {
+    padding-top: 5px;
     visibility: hidden;
   }
+
+#date-div {
+  margin-bottom: 5px;
+}
 
 #expense-amount-help {
     visibility: hidden;
