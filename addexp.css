@@ -5,3 +5,23 @@
 #expense-amount-help {
     visibility: hidden;
 }
+
+#category-help {
+  visibility: hidden;
+}
+
+#expense-label {
+  margin-bottom: -5px;
+}
+
+#category-label {
+  margin-bottom: -5px;
+}
+
+#date-div {
+  padding-top: 10px;
+}
+
+.last-button {
+  margin-top: 10px;
+}
