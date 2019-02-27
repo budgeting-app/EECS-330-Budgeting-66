@@ -4,45 +4,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/x-icon" href="money-icon.png"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <link rel="stylesheet" type="text/css" href="login.css">
     <script src="js/form.js"></script>
-    <link rel="stylesheet" href="login.css" type="text/css">
 </head>
- <!-- navigation bar --> 
-<div class="parallax">
-    <nav>       
-        <div class="navigation-bar">
-            <a class="navigation-bar-logo-text" href="index.html">budgetmates</a>
-            <a href="login.html" class="navigation-bar-button">SIGN UP</a>
-        </div>
-    </nav>
-    <span class="login-label">
-        <div>
-            <h2 class="login-h3">LOGIN</h2>
-        </div>
-    </span>
+<nav>
+<!-- NAVIGATION BAR -->
+<div class="navigation-bar">
+    <a class="navigation-bar-logo-text" href="index.html">BUDGETMATES</a>
+    <div class="navigation-bar-buttons-container">
+        <a href="login.html" class="navigation-bar-button">CREATE ACCOUNT</a>
+    </div>
 </div>
+</nav>
 <body>
-<div class="login-container">
-    <form name="login-form" action="redirect_after_login.html" onsubmit="return validateForm()" method="post">
-        <div class="form-group row" id="username-div">
-            <div class="col-md-4 col-md-offset-4">
-                <label for="exampleInputEmail1" class="control-label">Username</label>
-                <input type="text" class="form-control" id="login-username">
-                <span class="help-block" id="username-help">Username was left blank</span>
+<!-- LOGIN FORM -->
+<!-- <div class="background-rectangle"></div> -->
+<div class="login">
+    <span class="login-label">
+        <div><h class="login-h">Log into Budgetmates</h></div>
+    </span>
+    <div class="login-container">
+        <form name="login-form" action="index.html" onsubmit="return validateForm()" method="post">
+            <div class="form-group row" id="username-div">
+                <div class="col-md-4 col-md-offset-4">
+                    <label for="exampleInputEmail1" class="control-label">USERNAME</label>
+                    <input type="text" class="form-control" id="login-username">
+                    <span class="help-block" id="username-help">Username was left blank</span>
+                </div>
+            </div>   
+            <div class="form-group row" id="pass-div">
+                <div class="col-md-4 col-md-offset-4">
+                    <label for="exampleInputPassword1" class="control-label">PASSWORD</label>
+                    <input type="password" class="form-control" id="login-pass">
+                    <span class="help-block" id="password-help">Password was left blank</span>
+                </div>
             </div>
-        </div>
-        <div class="form-group row" id="pass-div">
-            <div class="col-md-4 col-md-offset-4">
-                <label for="exampleInputPassword1" class="control-label">Password</label>
-                <input type="password" class="form-control" id="login-pass">
-                <span class="help-block" id="password-help">Password was left blank</span>
+            <br>
+            <div class="col-md-12 text-center">
+                <button id="login-button" type="submit" class="btn btn-primary btn-raised">LOGIN</button>
             </div>
-        </div>
-        <div class="col-md-12 text-center">
-            <button id="login-button" type="submit" class="btn btn-primary btn-raised">Login</button>
-        </div>
-    </form>
+        </form>
+    </div>
 </div>
 <script src="js/form.js"></script>
 </body>
