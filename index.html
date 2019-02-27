@@ -1,35 +1,77 @@
 <!doctype html> 
 <html> 
-<title>budgetmates</title>
 <head>
-    <link rel="stylesheet" href="homepage.css" type="text/css">
+    <link rel="shortcut icon" type="image/x-icon" href="images/money-icon.png"/>
+    <link rel="stylesheet" type="text/css" href="index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- <meta name="theme-color" content="#daa37f"> -->
+    <title>Budgetmates</title>
 </head>
- <!-- navigation bar --> 
-<nav>       
-    <div class="navigation-bar">
-        <a class="navigation-bar-logo-text" href="index.html">budgetmates</a>
-        <a href="login.html" class="navigation-bar-button s-button">SIGN UP</a>
-        <a href="login.html" class="navigation-bar-button">LOG IN</a>
-    </div>
-</nav>
 <body>
-    <div class="main-content">
-        <h class="main-header">Save money today</h>
-        <img src="images/homepage-img.jpg" class="main-content-image">
+<!-- HOMEPAGE -->
+<div class="homepage" id="home">
+    <div class="homepage-overlay">
+        <div class="navigation-bar">
+            <!-- <a class"logo-icon"><i class="far fa-sack-dollar" aria-hidden="true"></i></a> -->
+            <a class="navigation-bar-logo-text" href="index.html">BUDGETMATES</a>
+            <div class="navigation-bar-buttons-container">
+                <a href="login.html" class="navigation-bar-button">LOG IN</a>
+                <a href="signup.html" class="navigation-bar-button">CREATE ACCOUNT</a>
+            </div>
+        </div>
+        <div class="homepage-text-container">
+            <h class="homepage-heading">Spend less.</h>
+            <!-- <p class="homepage-subheading">Helping you take control of your finances.</p> -->
+            <br><br><br><br><br>
+            <div class="homepage-buttons-container">
+                <a href="#" class="homepage-button">JOIN NOW</a>
+            </div>
+            <br>
+            <i class="fa"><a class="icon-button" href=#login>&#xf103;</a></i>
+        </div>
     </div>
-    <div class="buttons-container">
-        <div class="button">
-            <!-- <i class="fa"><a class="icon-button" href="example.com">&#xf0d6;</a></i> -->
-            <a class="button-text" href="expenses.html">View Expenses</a>
+</div>
+
+<!-- LOGIN PAGE -->
+<div class="loginpage" id="login">
+        <div class="container">
+          <div class="row row--center">
+            <div class="col-md-5 col-xs-8 col-sm-6 col--inbl">
+              <h1 class="sect__title">We believe in coffee that tastes incredible</h1>
+            <p class="sect__subtitle">
+              Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo.
+            </p>
+            </div>
+          </div>
+          <div class="row row--small row--margin row--center">
+            <div class="col-md-4 col-sm-4 coffee">
+              <!-- <img src="https://image.ibb.co/bKy6Db/coffee_item_2.png" class="coffee__img"> -->
+              <h2 class="coffee__name">Mocha latte</h2>
+              <p class="coffee__descr">
+                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.
+              </p>
+            </div>
+            
+            <div class="col-md-4 col-sm-4 coffee">
+              <!-- <img src="https://image.ibb.co/nN0WeG/coffee_item_1.png" class="coffee__img"> -->
+              <h2 class="coffee__name">Pour over</h2>
+              <p class="coffee__descr">
+                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.
+              </p>
+            </div>
+            
+             <div class="col-md-4 col-sm-4 coffee">
+              <!-- <img src="https://image.ibb.co/dHQa6w/coffee_item_3.png" class="coffee__img"> -->
+              <h2 class="coffee__name">Espresso</h2>
+              <p class="coffee__descr">
+                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.
+              </p>
+            </div>  
+          </div>
+             <div class="row row--margin row--center">
+               <a href="#" class="btn">Full menu</a>
+             </div>
         </div>
-        <div class="button">
-                <!-- <i class="fa"><a class="icon-button" href="example.com">&#xf0d6;</a></i> -->
-                <a class="button-text" href="addexpenses.html">Add Expenses</a>
-        </div>
-        <div class="button">
-                <!-- <i class="fa"><a class="icon-button" href="example.com">&#xf0d6;</a></i> -->
-                <a class="button-text" href="example.com">Find Food</a>
-        </div>
-    </div>
+      </div>
 </body>
+</html>
