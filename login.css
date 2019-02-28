@@ -25,18 +25,22 @@ body {
 
 .navigation-bar-logo-text { 
     color: black;
+    text-decoration: none;
 }
 
 .navigation-bar-logo-text:hover { 
     color: black;
+    text-decoration: none;
 }
 
 .navigation-bar-button { 
     color: black;
+    text-decoration: none;
 }
 
 .navigation-bar-button:hover { 
     color: black;
+    text-decoration: none;
     border: 1px solid black;
 }
 
