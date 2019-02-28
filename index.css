@@ -75,6 +75,7 @@ html, body {
     display: block;
 }
 
+
 .homepage-overlay {
     width: 100%;
     height: 100%;
@@ -151,6 +152,12 @@ html, body {
     left: 50%;
     margin-left: -12px;
     animation: float 3s ease-in-out infinite;
+}
+
+.icon-button: hover { 
+    color: white;
+    text-shadow: 1px 1px gray;
+    text-decoration: none;
 }
 
 @keyframes float { 

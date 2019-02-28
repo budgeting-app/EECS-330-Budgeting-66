@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i');
+@import url("https://use.typekit.net/vwk0sna.css");
+
+html {
+    /* background-color: white; */
+    /* background: linear-gradient(#232526,#414345); */
+}
+
+body {
+}
+
+/*** FRONT PAGE ***/
+
+.navigation-bar-logo-text { 
+    color: white;
+}
+
+.navigation-bar-button { 
+    color: white;
+}
+
+.homepage {
+    background-image: url('images/expenses1.jpg');
+    opacity: 0.8;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.homepage-overlay {
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.3);  /* adds dark effect to background */
+    text-align: center;
+    position: relative;
+    display: block;
+    margin: auto auto auto auto;
+    /* animation: banner-in 2s ; */
+}
+
+.homepage-heading { 
+    font-size: 125px;
+}
+
+.homepage-button { 
+    padding: 15px 30px;
+    font-size: 135%;
+    margin-left: 5%;
+}
+
+.homepage-button:hover { 
+    color: black;
+    text-decoration: none;
+}
+
+.icon-button:hover { 
+    color: white;
+    text-decoration: none;
+}
+
+.view-expenses { 
+    font-family: adelle-sans, sans-serif;
+    color: white;
+    text-align: center;
+    position: relative;
+    display: inline-block;
+    margin-left: 21.5%; 
+    margin-top: 5%;
+    padding: 15%;
+}
+
+.title {
+    font-size: 300%;
+    font-weight: 600;
+}
+
+.progress-bar { 
+    /* background-color: white;
+    margin-top: 10px;
+    height: 20px; 
+    width: 80%; */
+}
+
+#monthly { 
+    color: black;
+    background-color: white;
+    font-size: 150%;
+    font-family: adelle-sans, sans-serif;
+}
+
+.badge { 
+    /* width: 200%; */
+    height: 200%;
+}
+
+#streak { 
+    color: black;
+    background-color: white;
+    font-size: 125%;
+    font-family: adelle-sans, sans-serif;
+}
