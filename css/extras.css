@@ -63,7 +63,6 @@ body, html {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  margin-top: -10px;
 }
 .column-ex {
   flex-basis: 50%
