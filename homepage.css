@@ -7,6 +7,7 @@ html {
 
 body {
     background-image: linear-gradient(#B79891,#94716B);
+    text-align: center;
     /* background-color: white; */
 }
 
@@ -19,7 +20,6 @@ body {
     position: relative;
     display: inline-block;
     margin-top: 150px;
-    margin-left: 22.75%;
 }
 
 /*** ADD AND VIEW EXPENSES BUTTONS ***/
@@ -28,27 +28,17 @@ body {
 }
 
 .button-image { 
-    width: 300px;
+    width: 50%;
     height: 300px;
-    display: inline-flex;
-    margin-left: 19%;
+    display: inline-block;
     margin-top: 5%;
+    float: left;
 }
 
-.button-text-container {
-    position: relative;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.button-image2 { 
+    width: 35%;
 }
 
-.button-text-container{
-    margin-top: 5vh;
-}
 
 .col-lg-6{
     padding: 0 5px;
@@ -57,14 +47,30 @@ body {
 .button {
     font-family: adelle-sans, sans-serif;
     position: relative;
-    display: block;
-    width: 100%;
+    display: inline-block;
+    float: left;
+    width: 50%;
+    text-align: center;
+    cursor: pointer;
+    height: 125px;
+}
+
+.button22 {
+    font-family: adelle-sans, sans-serif;
+    position: relative;
+    display: inline-block;
+    float: right;
+    width: 50%;
     text-align: center;
     cursor: pointer;
     height: 125px;
 }
 
 .button a {
+    line-height: 125px;
+}
+
+.button22 a {
     line-height: 125px;
 }
 
@@ -100,8 +106,25 @@ body {
     background-color: black; /*rgba(255, 255, 255, 0.6);*/
     transition: 0.4s ease-out all .1s;
 }
+
+
+.button22 .custom-underline::after {
+    top: 65%;
+    height: 2px !important;
+    width: 40%;
+    left: 30%;
+    background-color: black; /*rgba(255, 255, 255, 0.6);*/
+    transition: 0.4s ease-out all .1s;
+}
+  
   
 .button:hover .custom-underline::after {
+    width: 90%;
+    left: 5%;
+    transition: 0.5s ease all;
+}
+
+.button22:hover .custom-underline::after {
     width: 90%;
     left: 5%;
     transition: 0.5s ease all;

@@ -7,12 +7,12 @@ html {
 
 body {
   background-image: linear-gradient(#B79891,#94716B);
+  text-align: center;
   /* background-color: #616369; */
   /* background-color: white; */
 }
 
 .text { 
-  margin-left: 27%;
   margin-top: 10%;
 }
 
@@ -23,7 +23,6 @@ body {
   text-align: left;
   position: relative;
   display: inline-block;
-  margin-left: 2%; 
   margin-top: 2%;
   line-height: 150%;
 }
