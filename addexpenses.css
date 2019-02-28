@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i'); 
+@import url("https://use.typekit.net/vwk0sna.css");
+
+html {  
+  background-color: white;
+}
+
+body {
+  background-image: linear-gradient(#B79891,#94716B);
+  /* background-color: #616369; */
+  /* background-color: white; */
+}
+
+.text { 
+  margin-left: 27%;
+  margin-top: 10%;
+}
+
+.add-expenses { 
+  font-family: adelle-sans, sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+  text-align: left;
+  position: relative;
+  display: inline-block;
+  margin-left: 2%; 
+  margin-top: 2%;
+  line-height: 150%;
+}
+
+#date-help {
+  padding-top: 5px;
+  visibility: hidden;
+}
+
+#date-div {
+  margin-bottom: 5px;
+}
+
+.control-label {
+  font-weight: 300;
+  font-size: 15px;
+}
+
+#expense-amount-div { 
+  /* width: 300px; */
+}
+
+#expense-amount-help {
+  visibility: hidden;
+}
+
+#category-help {
+  visibility: hidden;
+}
+
+#expense-label {
+  margin-bottom: -5px;
+  font-weight: 300;
+  font-size: 15px;
+}
+
+#category-label {
+  margin-bottom: -5px;
+  font-weight: 300;
+  font-size: 15px;
+}
+
+#date-div {
+  padding-top: 10px;
+}
+
+/* .form-check { 
+  margin-left: 10%;
+} */
+
+.form-check-label { 
+  font-weight: 300;
+  font-size: 15px;
+  margin-left: 5%;
+}
+
+.last-button {
+  margin-top: 10px;
+}
+
+#submit-button { 
+  padding: 15px 25px;
+  background-color: rgb(230, 230, 230);
+  font-family: adelle-sans, sans-serif;
+  font-size: 110%;
+  color: black;
+  border: 1px solid black;
+  border-radius: 0px;
+  text-decoration: none;
+}
+
+#submit-button:hover { 
+  background-color: white;
+  color: black;
+  text-decoration: none;
+}

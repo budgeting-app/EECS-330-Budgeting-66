@@ -1,90 +1,92 @@
 <!doctype html> 
+<!-- NOTE MUST READ: SPACING IS OFF BETWEEN EXPENSE AMOUNT AND EXPENSE CATEGORY -->
 <html> 
 <title>budgetmates</title>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/png" href="favicon.png"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-    <script src="js/form.js"></script>
-    <link rel="stylesheet" href="login.css" type="text/css">
-    <link rel="stylesheet" href="addexp.css" type="text/css">
-    <!--  jQuery -->
-    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
     <link rel="stylesheet" href="https://formden.com/static/cdn/bootstrap-iso.css" />
-    <!-- Bootstrap Date-Picker Plugin -->
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/js/bootstrap-datepicker.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/css/bootstrap-datepicker3.css"/>
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <link rel="stylesheet" type="text/css" href="login.css">
+    <link rel="stylesheet" type="text/css" href="homepage.css">
+    <link rel="stylesheet" type="text/css" href="addexpenses.css">
+    <script src="js/form.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/js/bootstrap-datepicker.min.js"></script>
 </head>
- <!-- navigation bar --> 
-<div class="parallax">
-    <nav>       
-        <div class="navigation-bar">
-            <a class="navigation-bar-logo-text" href="index.html">budgetmates</a>
-        </div>
-    </nav>
-    <span class="login-label">
-        <div>
-            <h2 class="login-h3">ADD EXPENSES</h2>
-        </div>
-    </span>
+<!-- NAVIGATION BAR -->
+<nav>
+<div class="navigation-bar">
+    <a class="navigation-bar-logo-text" href="index.html">BUDGETMATES</a>
+    <div class="navigation-bar-buttons-container">
+        <a href="homepage.html" class="navigation-bar-button">MY ACCOUNT</a>
+    </div>
 </div>
+</nav>
 <body>
-          <!-- Form code begins -->
-           <form method="post" action="expenses.html" onsubmit="return validateForm()">
-             <div class="form-group row" id="date-div"> <!-- Date input -->
-                <div class="col-md-2 col-md-offset-5">
-                    <label class="control-label" for="date">Date</label>
-                    <input class="form-control" id="date" name="date" placeholder="MM/DD/YYYY" type="text"/> 
-                    <span class="help-block" id="date-help">Date was left blank</span> 
-                </div>
-             </div>
-            <div class="form-row col-md-2 col-md-offset-5" id="expense-amount-div">
-                <label for="c2" id="expense-label">Expense Amount</label>
-                <div class="input-group"> 
-                    <span class="input-group-addon">$</span>
-                    <input type="number" value="0" min="0" step="1" data-number-to-fixed="2" data-number-stepfactor="100" class="form-control currency" id="c2" /> 
-                </div>
-                <span class="help-block" id="expense-amount-help">Fill in the expense</span>
+<h class="text">Add your expense!</h>
+<div class="add-expenses">
+    <form method="post" action="expenses.html" onsubmit="return validateForm()">
+        <div class="form-group row" id="date-div"> <!-- date input -->
+            <div class="col-md-2 col-md-offset-5">
+                <label class="control-label" for="date">DATE</label>
+                <input class="form-control" id="date" name="date" placeholder="MM/DD/YYYY" type="text"/> 
+                <span class="help-block" id="date-help">Date was left blank</span> 
             </div>
-            <div class="form-row col-md-2 col-md-offset-5" id="category-div">
-                <label for="inputState" id="category-label">Expense Category</label>
-                <select id="inputState" class="form-control">
-                    <option selected>Choose...</option>
-                    <option>Food-takeout</option>
-                    <option>Groceries</option>
-                    <option>Online Shopping</option>
-                    <option>Others</option>
-                </select>
-                <span class="help-block" id="category-help">Choose a category</span>
-            </div>
-            <div class="form-row col-md-2 col-md-offset-5 text-left">
-                <div class="form-check">
-                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
-                    <label class="form-check-label" for="exampleRadios1">
-                      One time expense
-                </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1">
-                    <label class="form-check-label" for="exampleRadios1">
-                      Daily expense
-                </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1">
-                    <label class="form-check-label" for="exampleRadios1">
-                      Weekly expense
-                    </label>
-                </div>
-                <div class="form-check last-check">
-                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1">
-                    <label class="form-check-label" for="exampleRadios1">
-                      Monthly expense
-                    </label>
-                </div>
-            </div>
-            <div class="form-group col-md-2 col-md-offset-5 text-center last-button"> <!-- Submit button -->
-               <button class="btn btn-primary " name="submit" type="submit">Submit</button>
-             </div>
-            </form>
+        </div>
+    <div class="form-row col-md-2 col-md-offset-5" id="expense-amount-div">
+        <label for="c2" id="expense-label">EXPENSE AMOUNT</label>
+        <div class="input-group"> 
+            <span class="input-group-addon">$</span>
+            <input type="number" value="0" min="0" step="1" data-number-to-fixed="2" data-number-stepfactor="100" class="form-control currency" id="c2" /> 
+        </div>
+        <span class="help-block" id="expense-amount-help">Fill in the expense</span>
+    </div>
+    <div class="form-row col-md-2 col-md-offset-5" id="category-div">
+        <label for="inputState" id="category-label">EXPENSE CATEGORY</label>
+        <select id="inputState" class="form-control">
+            <option selected>Choose...</option>
+            <option>Food-takeout</option>
+            <option>Groceries</option>
+            <option>Online Shopping</option>
+            <option>Others</option>
+        </select>
+        <span class="help-block" id="category-help">Choose a category</span>
+    </div>
+    <div class="form-row col-md-2 col-md-offset-5 text-left">
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+            <label class="form-check-label" for="exampleRadios1">
+                One time expense
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1">
+            <label class="form-check-label" for="exampleRadios1">
+                Daily expense
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1">
+            <label class="form-check-label" for="exampleRadios1">
+                Weekly expense
+            </label>
+        </div>
+        <div class="form-check last-check">
+            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1">
+            <label class="form-check-label" for="exampleRadios1">
+                Monthly expense
+            </label>
+        </div>
+    </div>
+    <div class="form-group col-md-2 col-md-offset-5 text-center last-button"> <!-- Submit button -->
+        <br><br><br>
+        <button id="submit-button" class="btn btn-primary " name="submit" type="submit">SUBMIT</button>
+        </div>
+    </form>
+</div>
             <!-- Form code ends -->   
 <script src="js/date.js"></script>
 <script src="js/dateValidate.js"></script>
