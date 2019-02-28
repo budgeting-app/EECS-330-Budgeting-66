@@ -6,8 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
     <script src="js/form.js"></script>
-    <link rel="stylesheet" href="login.css" type="text/css">
-    <link rel="stylesheet" href="addexp.css" type="text/css">
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <link rel="stylesheet" type="text/css" href="login.css">
+    <link rel="stylesheet" type="text/css" href="homepage.css">
     <!--  jQuery -->
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
     <link rel="stylesheet" href="https://formden.com/static/cdn/bootstrap-iso.css" />
@@ -16,19 +17,16 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/css/bootstrap-datepicker3.css"/>
 </head>
  <!-- navigation bar --> 
-<div class="parallax">
-    <nav>       
+ <nav>
         <div class="navigation-bar">
-            <a class="navigation-bar-logo-text" href="index.html">budgetmates</a>
+            <a class="navigation-bar-logo-text" href="index.html">BUDGETMATES</a>
+            <div class="navigation-bar-buttons-container">
+                <a href="homepage.html" class="navigation-bar-button">MY ACCOUNT</a>
+            </div>
         </div>
-    </nav>
-    <span class="login-label">
-        <div>
-            <h2 class="login-h3">MONTHLY GOAL</h2>
-        </div>
-    </span>
-</div>
+        </nav>
 <body>
+        <h class="text">Set your monthly goal!</h>
           <!-- Form code begins -->
            <form method="post" action="setgoal.html" onsubmit="return validateForm()">
              <div class="form-group row" id="date-div"> <!-- Date input -->
