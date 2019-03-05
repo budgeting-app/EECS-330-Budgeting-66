@@ -21,13 +21,13 @@ function validateForm() {
         document.getElementById('email-help').style.visibility = "visible";
     }
 
-    if (y != "" && x != "" && y!=x){
+    if (y != "" && z != "" && y!=z){
         document.getElementById("pass2-div").classList.add('has-error');
         document.getElementById('password3-help').style.visibility = "visible";
     }
     
     
-    if (x == "" || y == "" || z == "" || e == "" || y!=x){
+    if (x == "" || y == "" || z == "" || e == "" || y!=z){
         return false;
     }
 
