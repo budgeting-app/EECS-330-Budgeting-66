@@ -6,7 +6,7 @@ html, body {
     padding: 0;
     width: 100%;
     height: 100%;
-    /* overflow: hidden; */
+    overflow: hidden;
 }
 
 /*** NAVIGATION BAR ***/
@@ -35,7 +35,7 @@ html, body {
 .navigation-bar-buttons-container { 
     width: 30%;
     float: right;
-    margin-top: 40px;
+    margin-top: 48.5px;
 }
 
 .navigation-bar-button { 
@@ -69,7 +69,6 @@ html, body {
     position: relative;
     display: block;
 }
-
 
 .homepage-overlay {
     width: 100%;
@@ -132,11 +131,7 @@ html, body {
     text-decoration: none;
 }
 
-.homepage-button-animation {
-    animation: opacity 3s;
-}
-
-.icon-button { 
+/* .icon-button { 
     font-size: 50px;
     color: white;
     text-shadow: 1px 1px gray;
@@ -158,24 +153,6 @@ html, body {
     0% {transform: translatey(0px);}
     33% {transform: translatey(-10px);}
     100% {transform: translatey(0px);}
-}
+} */
 
 
-/*** LOGIN PAGE ***/
-
-.loginpage {
-    padding: 130px 0;
-    background-color: #fff;
-}
-  
-.sect__title {
-    margin-top: 0;
-    text-transform: uppercase;
-    line-height: 40px;
-    font-size: 30px;
-    margin-bottom: 20px;
-}
-  
-.sect__subtitle {
-      margin-bottom: 0;
-}
