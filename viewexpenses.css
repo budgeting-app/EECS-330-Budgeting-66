@@ -108,15 +108,29 @@ body {
 .progress-bar { 
     /* background-color: white;
     margin-top: 10px;
-    height: 20px; 
-    width: 80%; */
+    height: 20px; */
+    width: 80%; 
+}
+
+.monthly-container { 
+    height: 100vh;
+}
+
+#pieChart { 
+    margin-top: 5%;
 }
 
 #monthly { 
-    color: black;
-    background-color: white;
-    font-size: 150%;
     font-family: adelle-sans, sans-serif;
+    color: black;
+    font-weight: 400;
+    text-transform: uppercase;
+    background-color: white;
+    font-size: 120%;
+}
+
+.progress { 
+    margin-top: 2%;
 }
 
 #annual { 
@@ -131,6 +145,7 @@ body {
 #streak { 
     color: black;
     background-color: white;
-    font-size: 125%;
+    font-size: 100%;
     font-family: adelle-sans, sans-serif;
 }
+

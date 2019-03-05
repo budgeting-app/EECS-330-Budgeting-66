@@ -50,11 +50,12 @@
     </div>
 </div>
 <!--progress and daily streak -->
+<div class="monthly-container">
 <div class="ex-row">
     <div class="container-progress column-ex" id="monthly">
-        <span>Money spent out of monthly goal: 360$/450$</span>
+        <span>Money spent out of monthly goal: <i>360$/450$</i></span>
         <div class="progress">
-            <div class="progress-bar bg-warning" role="progressbar" style="width: 80%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+            <div class="progress-bar bg-info" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
         </div>
         <!--
         div class="old-level">
@@ -69,6 +70,7 @@
         <h4>Expenses this month in dollars</h4>
         </div>
     </div>
+</div>
 </div>
 <div id="annual">
     <div id="line-chart-container">
@@ -88,8 +90,8 @@
         labels: ["Food-takeout", "Groceries", "Online Shopping", "Others"],
         datasets: [{
             data: [180, 50, 90, 40],
-            backgroundColor: ["#F7464A", "#46BFBD", "#FDB45C", "#949FB1"],
-            hoverBackgroundColor: ["#FF5A5E", "#5AD3D1", "#FFC870", "#A8B3C5"]
+            backgroundColor: ["#86A8E7", "#2ebf91", "#a17fe0", "#FF416C"],
+            hoverBackgroundColor: ["rgba(134, 168, 231, 0.8)", "rgba(46,191,145,0.8)", "rgba(161,127,224,0.8)", "rgba(255,65,108,0.8)"]
         }]
         },
         options: {
