@@ -75,6 +75,12 @@
         <h4>Expenses this month in dollars</h4>
         </div>
     </div>
+    <div id="bar-chart-container">
+            <div id="bar-chart-div">
+                <canvas id="barChart"></canvas>
+                <h4>Expenses this month, per week</h4>
+            </div>
+    </div>
 </div>
 </div>
 <div id="annual">
@@ -130,4 +136,43 @@
     });
     
 </script>
+<script>
+        //bar
+        var ctxL = document.getElementById("barChart").getContext('2d');
+        var myLineChart = new Chart(ctxL, {
+            type: 'bar',
+            data: {
+            labels: ["Week 1", "Week 2", "Week 3"],
+            
+            datasets: [{
+                label: "Expenses in Dollars",
+                data: [110, 100, 150],
+                backgroundColor: [
+                'rgba(0, 137, 132, .2)', 'rgba(0, 137, 132, .2)', 'rgba(0, 137, 132, .2)',
+                ],
+                borderColor: [
+                'rgba(0, 10, 130, .7)', 'rgba(0, 10, 130, .7)', 'rgba(0, 10, 130, .7)',
+                ],
+                borderWidth: 5
+                }
+            ]
+            },
+            options: {
+            responsive: true,
+            scales: {
+                    xAxes: [{
+                            display: true,
+                        }],
+                    yAxes: [{
+                            display: true,
+                            ticks: {
+                                beginAtZero: true,
+                                max: 200
+                            }
+                        }]
+                },
+            }
+        });
+        
+    </script>
 </body>

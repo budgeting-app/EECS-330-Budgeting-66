@@ -84,6 +84,17 @@ body b{
     visibility: hidden;
 }
 
+#bar-chart-container {
+    width: 40%;
+    height: 460px;
+    text-align: center;
+    margin: auto;
+}
+
+#barChart {
+    margin-top: 100px;
+}
+
 @keyframes float { 
     0% {transform: translatey(0px);}
     33% {transform: translatey(-10px);}
@@ -125,6 +136,7 @@ body b{
 #pieChart { 
     margin-top: 5%;
 }
+
 
 #monthly { 
     color: black;
