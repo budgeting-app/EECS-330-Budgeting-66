@@ -30,5 +30,7 @@ function validateForm() {
     if (x == "" || y == "" || z == "" || e == "" || y!=x){
         return false;
     }
+
+    localStorage.setItem("flaglogin", "true");
     
   }

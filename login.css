@@ -91,6 +91,10 @@ body {
     line-height: 175%;
 }
 
+#aa {
+    visibility: hidden;
+}
+
 #username-help {
     visibility: hidden;
 }

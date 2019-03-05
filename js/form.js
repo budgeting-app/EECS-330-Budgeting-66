@@ -1,4 +1,11 @@
+var flag2 = localStorage.getItem("flaglogin");
 
+function loader() {
+    if (flag2 == "true"){
+      document.getElementById('aa').style.visibility = "visible";
+      localStorage.setItem("flaglogin", "false");
+    }
+  }
 function validateForm() {
     var x = document.getElementById('login-username').value;
     var y = document.getElementById('login-pass').value;
