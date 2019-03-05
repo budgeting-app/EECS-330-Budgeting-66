@@ -20,9 +20,14 @@ function validateForm() {
         document.getElementById("email-div").classList.add('has-error');
         document.getElementById('email-help').style.visibility = "visible";
     }
+
+    if (y != "" && x != "" && y!=x){
+        document.getElementById("pass2-div").classList.add('has-error');
+        document.getElementById('password3-help').style.visibility = "visible";
+    }
     
     
-    if (x == "" || y == "" || z == "" || e == "" ){
+    if (x == "" || y == "" || z == "" || e == "" || y!=x){
         return false;
     }
     

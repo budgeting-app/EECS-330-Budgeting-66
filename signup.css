@@ -106,6 +106,9 @@ body {
 #password2-help {
     visibility: hidden;
 }
+#password3-help {
+    visibility: hidden;
+}
 
 #login-button { 
     padding: 15px 25px;
