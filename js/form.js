@@ -1,3 +1,4 @@
+
 function validateForm() {
     var x = document.getElementById('login-username').value;
     var y = document.getElementById('login-pass').value;
@@ -22,4 +23,4 @@ function validateForm() {
     document.getElementById("login-button").onclick = function() {
       window.location("page3.html")
     }
-  }
+}

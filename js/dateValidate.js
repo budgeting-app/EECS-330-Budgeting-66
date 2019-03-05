@@ -2,6 +2,7 @@ function validateForm() {
     var x = document.getElementById('date').value;
     var y = document.getElementById('c2').value;
     var z = document.getElementById('inputState').value;
+
     if (x == "") {
       document.getElementById("date-div").classList.add('has-error');
       document.getElementById('date-help').style.visibility = "visible";
@@ -40,4 +41,6 @@ function validateForm() {
 
       return false;
     }
+    localStorage.setItem("flag", "true");
   }
+
