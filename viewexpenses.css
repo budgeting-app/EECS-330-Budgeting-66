@@ -95,6 +95,10 @@ body b{
     margin-top: 100px;
 }
 
+#lineChart {
+    margin-top: 250px;
+}
+
 @keyframes float { 
     0% {transform: translatey(0px);}
     33% {transform: translatey(-10px);}
