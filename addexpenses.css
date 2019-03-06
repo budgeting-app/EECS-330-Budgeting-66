@@ -3,6 +3,7 @@
 
 html {  
   background-color: white;
+  overflow: hidden;
 }
 
 body {
@@ -13,7 +14,7 @@ body {
 }
 
 .text { 
-  margin-top: 10%;
+  margin-top: 6%;
 }
 
 .add-expenses { 

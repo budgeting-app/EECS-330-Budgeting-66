@@ -47,30 +47,20 @@ body {
 
 /*** LOGIN FORM ***/
 
-/* .background-rectangle { 
-    background-color: gray;
-    width: 600px;
-    height: 500px;
-    position: fixed;
-    display: inline-block;
-    margin-left: 15%; 
-    margin-top: 10%;
-    z-index: -1;
-} */
-
 .login { 
     font-family: adelle-sans, sans-serif;
-    text-align: center;
+    text-align: center; 
     position: relative;
     display: inline-block;
     margin-top: 10%;
-    /* height: 500px; */
-    /* background-color: black; */
 }
 
 .login-label {
-    font-size: 250%;
-    font-weight: 300;
+    font-weight: 600;
+    font-size: 300%;
+    position: relative;
+    display: inline-block;
+    margin-left: 3%;
 }
 
 .login-container {
@@ -79,6 +69,10 @@ body {
     padding-top: 45px!important;
     padding-bottom: 45px!important;
     border-radius: 0px;
+}
+
+.col-md-4 { 
+    padding: 0px;
 }
 
 .form-group {

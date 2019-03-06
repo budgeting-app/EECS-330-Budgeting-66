@@ -7,7 +7,7 @@ html {
 }
 
 body b{
-    color: green;
+    color: #1D976C;
 }
 
 /*** FRONT PAGE ***/
@@ -79,35 +79,17 @@ body b{
     text-decoration: none;
 }
 
-#aa {
-    margin-top: 20px;
-    visibility: hidden;
-}
-
-#bar-chart-container {
-    width: 40%;
-    height: 460px;
-    text-align: center;
-    margin: auto;
-}
-
-#barChart {
-    margin-top: 40px;
-}
-
-#lineChart {
-    margin-top: 250px;
-}
-
 @keyframes float { 
     0% {transform: translatey(0px);}
     33% {transform: translatey(-10px);}
     100% {transform: translatey(0px);}
 }
 
-.icon-button:hover { 
-    color: white;
-    text-decoration: none;
+/*** VIEW EXPENSES ***/
+
+#aa {
+    margin-top: 20px;
+    visibility: hidden;
 }
 
 .view-expenses { 
@@ -126,6 +108,23 @@ body b{
     font-weight: 600;
 }
 
+/* .header {
+    font-weight: 600;
+    font-size: 200%;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    display: block;
+    padding: 0;
+    margin-top: 0;
+} */
+
+/*** STREAK AND PROGRESS ***/
+
+.monthly-container { 
+    height: 100vh;
+}
+
 .progress-bar { 
     /* background-color: white;
     margin-top: 10px;
@@ -133,14 +132,37 @@ body b{
     width: 80%; 
 }
 
-.monthly-container { 
-    height: 100vh;
+.progress { 
+    margin-top: 2%;
 }
 
-#pieChart { 
-    margin-top: 5%;
+.badge { 
+    /* width: 10%; */
+    height: 200%;
 }
 
+.btn { 
+    padding: 15px 20px;
+}
+
+.btn-info {
+    font-family: adelle-sans, sans-serif;
+    /* text-transform: lowercase; */
+}
+
+.badge-pill {
+    margin-left: 7.5px;
+}
+
+#streak { 
+    color: black;
+    background-color: white;
+    font-size: 100%;
+    font-weight: 600;
+    letter-spacing: 1.75px;
+}
+
+/*** WEEKLY AND MONTHLY GRAPHS ***/
 
 #monthly { 
     color: black;
@@ -149,22 +171,55 @@ body b{
     font-size: 120%;
 }
 
-.progress { 
-    margin-top: 2%;
+#bar-chart-container {
+    width: 40%;
+    height: 460px;
+    text-align: center;
+    margin: auto;
+    margin-left: 7%;
+    margin-top: -5%;
 }
+
+#barChart {
+    margin-top: 40px;
+}
+
+#pieChart { 
+    margin-top: 30%;
+}
+
+/*** ANNUAL GRAPH ***/
 
 #annual { 
     background-color: white;
 }
 
-.badge { 
-    /* width: 200%; */
-    height: 200%;
+#lineChart {
+    margin-top: 250px;
+    margin-bottom: 100px;
 }
 
-#streak { 
-    color: black;
-    background-color: white;
-    font-size: 100%;
+.line-chart-div { 
+    padding: 0px;
 }
 
+.line-chart-label { 
+    position: relative;
+    display: block;
+    margin-top: -75px;
+}
+
+h4 { 
+    font-family: adelle-sans, sans-serif;
+}
+
+/*** PARALLAX ***/
+.parallax1 {
+    background: url('images/finance.jpg') no-repeat fixed 100% 0;
+    opacity: 0.8;
+    background-position: center;
+    height: 100%;
+    background-size: cover;
+    color: rgba(45, 0, 71, 0.5);
+    padding: 10px;
+  }

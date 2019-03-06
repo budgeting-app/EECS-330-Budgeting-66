@@ -18,59 +18,24 @@ body {
     /* background-image: linear-gradient(to top, #c4c5c7 0%, #dcdddf 52%, #ebebeb 100%); */
 }
 
-/*** NAVIGATION BAR ***/
-
-.navigation-bar-logo-text { 
-    color: black;
-    text-decoration: none;
-    margin-left: 20px;
-}
-
-.navigation-bar-logo-text:hover { 
-    color: black;
-    text-decoration: none;
-}
-
-.navigation-bar-button { 
-    color: black;
-    text-decoration: none;
-    float: right;
-    margin-top: -12px;
-    margin-right: 150px;
-}
-
-.navigation-bar-button:hover { 
-    color: black;
-    text-decoration: none;
-    border: 1px solid black;
-}
-
-/*** LOGIN FORM ***/
-
-/* .background-rectangle { 
-    background-color: gray;
-    width: 600px;
-    height: 500px;
-    position: fixed;
-    display: inline-block;
-    margin-left: 15%; 
-    margin-top: 10%;
-    z-index: -1;
-} */
+/*** SIGNUP FORM ***/
 
 .login { 
     font-family: adelle-sans, sans-serif;
     text-align: center;
     position: relative;
     display: inline-block;
-    margin-top: 10%;
+    margin-top: 4%;
     /* height: 500px; */
     /* background-color: black; */
 }
 
 .login-label {
-    font-size: 250%;
-    font-weight: 300;
+    font-weight: 600;
+    font-size: 300%;
+    position: relative;
+    display: inline-block;
+    /* margin-top: -5%; */
 }
 
 .login-container {
@@ -79,6 +44,7 @@ body {
     padding-top: 45px!important;
     padding-bottom: 45px!important;
     border-radius: 0px;
+    text-align: left;
 }
 
 .form-group {
