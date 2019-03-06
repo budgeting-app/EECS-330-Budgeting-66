@@ -185,7 +185,8 @@ body b{
 }
 
 #pieChart { 
-    margin-top: 30%;
+    margin-top: 12%;
+    height: 481px;
 }
 
 /*** ANNUAL GRAPH ***/
@@ -223,3 +224,9 @@ h4 {
     color: rgba(45, 0, 71, 0.5);
     padding: 10px;
   }
+
+#pie-container {
+   position: relative; 
+   height:40vh; 
+   width:65vw;
+}
