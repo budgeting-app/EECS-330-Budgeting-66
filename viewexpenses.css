@@ -67,7 +67,7 @@ body b{
     text-shadow: 1px 1px gray;
     text-decoration: none;
     position: absolute;
-    bottom: -200px;
+    bottom: -120px;
     left: 50%;
     margin-left: -12px;
     animation: float 3s ease-in-out infinite;
