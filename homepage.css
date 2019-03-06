@@ -35,9 +35,9 @@ body {
     margin-top: 5%;
 }
 
-.button-image:hover { 
+/* .button-image:hover { 
     cursor: pointer;
-}
+} */
 
 .button-text-container {
     position: relative;
