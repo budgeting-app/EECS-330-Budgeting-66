@@ -8,6 +8,7 @@ html {
 
 body b{
     color: #1D976C;
+    font-size: 200%;
 }
 
 /*** FRONT PAGE ***/
@@ -186,6 +187,10 @@ body b{
 
 #pieChart { 
     margin-top: 30%;
+}
+
+#pieChart:hover { 
+    cursor: pointer;
 }
 
 /*** ANNUAL GRAPH ***/
