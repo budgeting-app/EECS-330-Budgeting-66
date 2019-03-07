@@ -68,7 +68,7 @@ body b{
     text-shadow: 1px 1px gray;
     text-decoration: none;
     position: absolute;
-    bottom: -200px;
+    bottom: -120px;
     left: 50%;
     margin-left: -12px;
     animation: float 3s ease-in-out infinite;
@@ -186,7 +186,8 @@ body b{
 }
 
 #pieChart { 
-    margin-top: 30%;
+    margin-top: 12%;
+    height: 481px;
 }
 
 #pieChart:hover { 
@@ -228,3 +229,9 @@ h4 {
     color: rgba(45, 0, 71, 0.5);
     padding: 10px;
   }
+
+#pie-container {
+   position: relative; 
+   height:40vh; 
+   width:65vw;
+}

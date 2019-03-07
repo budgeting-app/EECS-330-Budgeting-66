@@ -44,9 +44,10 @@ body, html {
 }
 
 #pie-chart-div {
-  width: 40%;
+  width: 30%;
   height: 460px;
   text-align: center;
+  margin-left: -50px;
 }
 
 #line-chart-container {
