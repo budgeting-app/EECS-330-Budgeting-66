@@ -2,24 +2,41 @@
 @import url("https://use.typekit.net/vwk0sna.css");
 
 html {
-    /* background-color: white; */
+    background-color: white;
 }
 
 body {
-    background-image: linear-gradient(#B79891,#94716B);
-    /* background-color: white; */
+    background-image: linear-gradient(white, white);
 }
 
 /*** TEXT ***/
 
+.navigation-bar-logo-text { 
+    color: black;
+}
+
+.navigation-bar-logo-text:hover { 
+    color: black;
+}
+
+.navigation-bar-button { 
+    color: black;
+}
+
+.navigation-bar-button:hover { 
+    color: black;
+    border: 1px solid;
+}
+
 .text { 
+    color: black;
     font-family: adelle-sans, sans-serif;
     font-weight: 600;
     font-size: 300%;
     position: relative;
     display: inline-block;
     margin-top: 150px;
-    margin-left: 3%;
+    /* margin-left: 2%; */
 }
 
 /*** ADD AND VIEW EXPENSES BUTTONS ***/
@@ -32,6 +49,7 @@ body {
     width: 300px;
     height: 300px;
     display: inline-flex;
+    margin-top: 1px;
 }
 
 .button-image2 { 
@@ -43,13 +61,9 @@ body {
 .button-image3 { 
     width: 300px;
     height: 300px;
-    margin-right: 12px;
+    margin-right: 10px;
     display: inline-flex;
 }
-
-/* .button-image:hover { 
-    cursor: pointer;
-} */
 
 .button-text-container {
     width: 100%;
@@ -79,6 +93,7 @@ body {
 }
 
 #button1 { 
+    margin-top: 1px;
 }
 
 #button2 { 

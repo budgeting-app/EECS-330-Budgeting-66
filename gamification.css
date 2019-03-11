@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i'); 
+@import url("https://use.typekit.net/vwk0sna.css");
+
+html {
+    /* background-color: #636FA4; */
+    /* overflow: hidden; */
+    /* background-color: #E8CBC0; */
+}
+
+body {
+    /* background-image: linear-gradient(#B79891,#94716B);  */
+    /* background-color: #636FA4; */
+    background-color: white;
+}
+
+.navigation-bar-logo-text,
+.navigation-bar-logo-text:hover,
+.navigation-bar-button,
+.navigation-bar-button:hover { 
+    color: black;
+}
+
+/*** TEXT ***/
+
+.text { 
+    font-family: adelle-sans, sans-serif;
+    font-weight: 600;
+    font-size: 300%;
+    position: relative;
+    display: inline-block;
+    margin-top: 50px;
+    margin-left: 2%;
+}
+
+/* split screen */
+
+.split {
+    height: 100%;
+    width: 50%;
+}
+  
+.left {
+    left: 0;
+    background-color: white;
+}
+
+.right {
+    right: 0;
+    background-color: #636FA4;
+}
+  
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+/*** LEVEL ***/
+
+
+/*** PROGRESS BAR ***/
+
+.monthly-container { 
+    height: 150vh;
+}
+
+.container-progress { 
+    background-color: inherit;
+    font-family: adelle-sans, sans-serif;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -7%;
+}
+
+span { 
+    font-family: adelle-sans, sans-serif;
+    font-size: 175%;
+    text-align: justify;
+    line-height: 100%;
+    margin-left: -45%;
+}
+
+.progress-bar {
+    height: 200px;
+    width: 80%; 
+}
+
+.progress { 
+    margin-top: 5%;
+    margin-left: -20%;
+    height: 50px;
+    width: 750px;
+    border: 1px solid lightgray;
+}
+
+p { 
+    font-family: adelle-sans, sans-serif;
+    /* font-weight: 600; */
+    font-size: 200%;
+    margin-top: 1.75%;
+}
+
+.badge { 
+    /* width: 200%; */
+    height: 200%;
+}
+
+#streak { 
+    color: black;
+    background-color: white;
+    font-size: 100%;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+}
+
