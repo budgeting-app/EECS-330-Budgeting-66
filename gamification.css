@@ -10,7 +10,7 @@ html {
 body {
     /* background-image: linear-gradient(#B79891,#94716B);  */
     /* background-color: #636FA4; */
-    background-color: white;
+    background-image: linear-gradient(white, white);
 }
 
 .navigation-bar-logo-text,
@@ -20,9 +20,14 @@ body {
     color: black;
 }
 
+.navigation-bar-button:hover { 
+    border: 1px solid black;
+}
+
 /*** TEXT ***/
 
 .text { 
+    color: black;
     font-family: adelle-sans, sans-serif;
     font-weight: 600;
     font-size: 300%;
@@ -31,34 +36,6 @@ body {
     margin-top: 50px;
     margin-left: 2%;
 }
-
-/* split screen */
-
-.split {
-    height: 100%;
-    width: 50%;
-}
-  
-.left {
-    left: 0;
-    background-color: white;
-}
-
-.right {
-    right: 0;
-    background-color: #636FA4;
-}
-  
-.centered {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-}
-
-/*** LEVEL ***/
-
 
 /*** PROGRESS BAR ***/
 
@@ -71,7 +48,8 @@ body {
     font-family: adelle-sans, sans-serif;
     margin-left: auto;
     margin-right: auto;
-    margin-top: -7%;
+    margin-top: -5%;
+    color: black;
 }
 
 span { 
@@ -79,12 +57,13 @@ span {
     font-size: 175%;
     text-align: justify;
     line-height: 100%;
-    margin-left: -45%;
+    margin-left: -33%;
 }
 
 .progress-bar {
     height: 200px;
     width: 80%; 
+    background-color: #4286f4;
 }
 
 .progress { 
@@ -95,11 +74,25 @@ span {
     border: 1px solid lightgray;
 }
 
-p { 
+.percent { 
     font-family: adelle-sans, sans-serif;
     /* font-weight: 600; */
     font-size: 200%;
     margin-top: 1.75%;
+}
+
+.caption { 
+    font-size: 150%;
+    text-align: left;
+    margin-left: -20%;
+    color: gray;
+    width: 1000px;
+}
+
+b { 
+    color: #3a7bd5;
+    font-size: 150%;
+    letter-spacing: 1.25px;
 }
 
 .badge { 
@@ -107,11 +100,13 @@ p {
     height: 200%;
 }
 
-#streak { 
+.streak { 
     color: black;
-    background-color: white;
-    font-size: 100%;
-    font-weight: 600;
-    letter-spacing: 1.5px;
+    margin-left: 6%;
+    margin-top: -75px;
+}
+
+i { 
+    color: blue;
 }
 
