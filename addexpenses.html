@@ -30,11 +30,11 @@
 <body>
 <h class="text">Add your expense!</h>
 <div class="add-expenses">
-    <form method="post" action="viewexpenses.html" onsubmit="return validateForm()">
+    <form autocomplete="off" method="post" action="viewexpenses.html" onsubmit="return validateForm()">
         <div class="form-group row" id="date-div"> <!-- date input -->
             <div class="col-md-2 col-md-offset-5">
                 <label class="control-label" for="date">DATE</label>
-                <input class="form-control" id="date" name="date" placeholder="MM/DD/YYYY" type="text"/> 
+                <input autocomplete="off" class="form-control" id="date" name="date" placeholder="MM/DD/YYYY" type="text"/> 
                 <span class="help-block" id="date-help">Date was left blank</span> 
             </div>
         </div>

@@ -29,11 +29,11 @@
 <body>
         <h class="text">Set your monthly goal!</h>
           <!-- Form code begins -->
-           <form method="post" action="homepage.html" onsubmit="return validateForm()">
+           <form autocomplete="off" method="post" action="homepage.html" onsubmit="return validateForm()">
              <div class="form-group row" id="date-div"> <!-- Date input -->
                 <div class="col-md-2 col-md-offset-5">
                     <label class="control-label" for="date">Select a month</label>
-                    <input class="form-control" id="date" name="date" placeholder="MM/YYYY" type="text"/> 
+                    <input autocomplete="off" class="form-control" id="date" name="date" placeholder="MM/YYYY" type="text"/> 
                     <span class="help-block" id="date-help">Month was not selected</span> 
                 </div>
              </div>
