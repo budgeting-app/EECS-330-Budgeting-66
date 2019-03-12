@@ -80,6 +80,12 @@ body {
   margin-left: 5%;
 }
 
+.form-check-label2 { 
+  font-weight: 300;
+  font-size: 15px;
+  margin-left: 1%;
+}
+
 .last-button {
   margin-top: 10px;
 }
