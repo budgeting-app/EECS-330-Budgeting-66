@@ -2,14 +2,16 @@
 @import url("https://use.typekit.net/vwk0sna.css");
 
 html {
-    background-color: white;
     /* background: linear-gradient(#232526,#414345); */
 }
 
 body {
     text-align: center;
-    background-image: linear-gradient(to top, #a3bded 0%, #6991c7 100%);
-    color: white;
+    /* background-image: linear-gradient(to top, #a3bded 0%, #6991c7 100%); */
+    background: #6190E8;  
+    background: -webkit-linear-gradient(to bottom, #A7BFE8, #6190E8);  
+    background: linear-gradient(to bottom, #A7BFE8, #6190E8);  
+    color: black;
 }
 
 /*** NAVIGATION BAR ***/
@@ -17,11 +19,11 @@ body {
 .navigation-bar-logo-text { 
     text-decoration: none;
     margin-left: 20px;
-    color: white;
+    color: black;
 }
 
 .navigation-bar-logo-text:hover { 
-    /* color: black; */
+    color: black;
     text-decoration: none;
 }
 
@@ -30,13 +32,13 @@ body {
     float: right;
     margin-top: -12px;
     margin-right: 150px;
-    color: white;
+    color: black;
 }
 
 .navigation-bar-button:hover { 
-    /* color: black; */
+    color: black;
     text-decoration: none;
-    border: 1px solid white;
+    border: 1px solid black;
 }
 
 /*** LOGIN FORM ***/

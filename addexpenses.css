@@ -3,12 +3,12 @@
 
 html {  
   background-color: white;
-  overflow: hidden;
 }
 
 body {
-  background-image: linear-gradient(#B79891,#94716B);
   text-align: center;
+  background-image: linear-gradient(to top, #a3bded 0%, #6991c7 100%);
+  color: black;
   /* background-color: #616369; */
   /* background-color: white; */
 }
@@ -24,7 +24,7 @@ body {
   text-align: left;
   position: relative;
   display: inline-block;
-  margin-top: 2%;
+  margin-top: 1%;
   line-height: 150%;
 }
 
@@ -92,17 +92,19 @@ body {
 
 #submit-button { 
   padding: 15px 25px;
-  background-color: rgb(230, 230, 230);
+  /* background-color: rgb(230, 230, 230); */
+  background-color: white;
   font-family: adelle-sans, sans-serif;
   font-size: 110%;
   color: black;
-  border: 1px solid black;
+  /* border: 1px solid black; */
+  border: 0px;
   border-radius: 0px;
   text-decoration: none;
 }
 
 #submit-button:hover { 
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.5);
   color: black;
   text-decoration: none;
 }
