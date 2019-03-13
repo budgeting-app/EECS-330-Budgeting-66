@@ -95,9 +95,25 @@ b {
     letter-spacing: 1.25px;
 }
 
-.badge { 
+table, th, td {
+    /* border: 1px solid black; */
+    padding: 15px;
+}
+
+table { 
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.badge-img { 
     /* width: 200%; */
-    height: 200%;
+    height: 150px;
+    width: 150px;
+}
+
+.badge-text { 
+    font-family: adelle-sans, sans-serif;
+    font-size: 175%;
 }
 
 .streak { 
@@ -109,4 +125,5 @@ b {
 i { 
     color: blue;
 }
+
 
