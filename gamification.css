@@ -25,6 +25,12 @@ body {
 }
 
 /*** TEXT ***/
+.ex-row2 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 38%;
+}
 
 .text { 
     color: black;
@@ -43,21 +49,27 @@ body {
     height: 150vh;
 }
 
+.progress-title {
+    display: block;
+}
+
+
 .container-progress { 
+    display: block;
     background-color: inherit;
     font-family: adelle-sans, sans-serif;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: -5%;
     color: black;
+    margin-top: 5%;
 }
+
 
 span { 
     font-family: adelle-sans, sans-serif;
     font-size: 175%;
-    text-align: justify;
+    text-align: left;
     line-height: 100%;
-    margin-left: -33%;
+    margin-left: -20%;
+    width: 1000px;
 }
 
 .progress-bar {
@@ -81,12 +93,21 @@ span {
     margin-top: 1.75%;
 }
 
+.money-spent {
+    text-align: left;
+}
+
 .caption { 
     font-size: 150%;
     text-align: left;
     margin-left: -20%;
     color: gray;
     width: 1000px;
+}
+
+.streak { 
+    margin-top: 10%;
+    text-align: left;
 }
 
 b { 
@@ -114,12 +135,6 @@ table {
 .badge-text { 
     font-family: adelle-sans, sans-serif;
     font-size: 175%;
-}
-
-.streak { 
-    color: black;
-    margin-left: 6%;
-    margin-top: -75px;
 }
 
 i { 
