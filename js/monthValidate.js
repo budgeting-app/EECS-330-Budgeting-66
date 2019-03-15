@@ -22,4 +22,5 @@ function validateForm() {
         }
         return false;
       }
+      localStorage.setItem("flagmonthset", "true");
     }

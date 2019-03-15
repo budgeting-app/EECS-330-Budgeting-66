@@ -28,6 +28,11 @@ body {
     border: 1px solid;
 }
 
+#aa2 {
+    margin-top: 20px;
+    visibility: hidden;
+}
+
 .text { 
     color: black;
     font-family: adelle-sans, sans-serif;
